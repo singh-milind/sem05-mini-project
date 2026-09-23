@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EventEase - Ticket Booking Platform</title>
+
+    <link rel="stylesheet" href="TicketBooking.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            <b>🟠 EventEase</b>
+            <small>DISCOVER • BOOK • INDIA</small>
+        </div>
+
+        <h2>EventEase</h2>
+
+        <div class="location">
+            📍 IN All India
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Events</a>
+            <a href="#">Categories</a>
+            <a href="#">About</a>
+
+            <a href="#" class="active">
+                Booking
+            </a>
+        </nav>
+
+        <button class="explore">
+            Explore Events
+        </button>
+
+        <div class="profile">
+            👤
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- ================= LEFT SIDE ================= -->
+
+        <section class="left-section">
+
+            <!-- Event heading -->
+
+            <div class="event-heading">
+
+                <h1>Sunburn Goa 2026</h1>
+
+                <p>📅 18 December 2026</p>
+
+                <p>📍 Goa, India</p>
+
+            </div>
+
+
+            <!-- ================= TICKET SECTION ================= -->
+
+            <div class="box">
+
+                <h2>
+                    <span class="number">1</span>
+                    Select Your Pass
+                </h2>
+
+
+                <!-- Ticket 1 -->
+
+                <label class="ticket">
+
+                    <div class="radio">
+                        <input
+                            type="radio"
+                            name="pass"
+                            value="General Admission"
+                        >
+                    </div>
+
+                    <div class="ticket-info">
+
+                        <h3>
+                            General Admission (GA)
+
+                            <span class="limited">
+                                Available
+                            </span>
+                        </h3>
+
+                        <p>
+                            Standard festival access with
+                            access to the main event area.
+                        </p>
+
+                    </div>
+
+                    <div class="ticket-price">
+
+                        <strong>₹2,999</strong>
+
+                        <small>
+                            per attendee
+                        </small>
+
+                        <span>Qty:</span>
+
+                        <select>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+
+                    </div>
+
+                </label>
+
+
+                <!-- Ticket 2 -->
+
+                <label class="ticket">
+
+                    <div class="radio">
+                        <input
+                            type="radio"
+                            name="pass"
+                            value="VIP Pass"
+                        >
+                    </div>
+
+                    <div class="ticket-info">
+
+                        <h3>
+                            VIP Pass
+
+                            <span class="limited">
+                                Limited
+                            </span>
+                        </h3>
+
+                        <p>
+                            Express fast-track entry lane,
+                            premium viewing deck and
+                            dedicated VIP facilities.
+                        </p>
+
+                    </div>
+
+                    <div class="ticket-price">
+
+                        <strong>₹5,999</strong>
+
+                        <small>
+                            per attendee
+                        </small>
+
+                        <span>Qty:</span>
+
+                        <select>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+
+                    </div>
+
+                </label>
+
+
+                <!-- Ticket 3 -->
+
+                <label class="ticket">
+
+                    <div class="radio">
+                        <input
+                            type="radio"
+                            name="pass"
+                            value="VIP Lounge & Backstage"
+                        >
+                    </div>
+
+                    <div class="ticket-info">
+
+                        <h3>
+                            VIP Lounge & Backstage
+
+                            <span class="few">
+                                ● Few Left
+                            </span>
+                        </h3>
+
+                        <p>
+                            All-access wristband, artist lounge,
+                            gourmet dining and VIP parking.
+                        </p>
+
+                    </div>
+
+                    <div class="ticket-price">
+
+                        <strong>₹9,999</strong>
+
+                        <small>
+                            per attendee
+                        </small>
+
+                        <span>Qty:</span>
+
+                        <select>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+
+                    </div>
+
+                </label>
+
+            </div>
+
+
+            <!-- ================= ATTENDEE INFORMATION ================= -->
+
+            <div class="box attendee">
+
+                <div class="section-title">
+
+                    <h2>
+                        <span class="number">2</span>
+                        Attendee Information
+                    </h2>
+
+                    <b>
+                        REQUIRED FOR WRISTBANDS
+                    </b>
+
+                </div>
+
+
+                <!-- Name -->
+
+                <label>
+                    Primary Attendee Full Name *
+                </label>
+
+                <input
+                    type="text"
+                    value="Madhur dubey"
+                >
+
+                <p class="help">
+                    Must match Aadhaar, PAN card,
+                    or Passport during security verification.
+                </p>
+
+
+                <!-- Email and phone -->
+
+                <div class="two-inputs">
+
+                    <div>
+
+                        <label>
+                            Email Address (Tickets sent here) *
+                        </label>
+
+                        <input
+                            type="email"
+                            value="madhur.dubey_cs24@gla.ac.in"
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label>
+                            Mobile Number *
+                        </label>
+
+                        <input
+                            type="tel"
+                            value="7689045542"
+                        >
+
+                    </div>
+
+
+                    <!-- Submit -->
+
+                    <div class="button">
+
+                        <button type="submit">
+                            Submit
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RIGHT SIDE ================= -->
+
+        <aside class="right-section">
+
+            <div class="summary">
+
+                <div class="summary-heading">
+
+                    <h2>
+                        Order Summary
+                    </h2>
+
+                    <span>
+                        2 Passes
+                    </span>
+
+                </div>
+
+
+                <!-- Event -->
+
+                <div class="summary-row">
+
+                    <span>Event</span>
+
+                    <strong>
+                        Sunburn Goa 2026
+                        <br>
+                        <small>18 Dec 2026</small>
+                    </strong>
+
+                </div>
+
+
+                <!-- Ticket -->
+
+                <div class="summary-row">
+
+                    <span>Ticket Tier</span>
+
+                    <strong>
+                        General Admission (GA)
+                    </strong>
+
+                </div>
+
+
+                <!-- Quantity -->
+
+                <div class="summary-row">
+
+                    <span>Quantity</span>
+
+                    <strong>
+                        2 × ₹2,999
+                    </strong>
+
+                </div>
+
+
+                <!-- Subtotal -->
+
+                <div class="summary-row">
+
+                    <span>Subtotal</span>
+
+                    <strong>
+                        ₹5,998
+                    </strong>
+
+                </div>
+
+
+                <!-- Fee -->
+
+                <div class="summary-row">
+
+                    <span>
+                        Platform & Booking Fee
+                    </span>
+
+                    <strong>
+                        ₹300
+                    </strong>
+
+                </div>
+
+
+                <!-- Promo -->
+
+                <div class="promo">
+
+                    <div class="promo-title">
+
+                        <b>
+                            PROMO / STUDENT CODE
+                        </b>
+
+                        <span>
+                            Applied (-₹0)
+                        </span>
+
+                    </div>
+
+                    <div class="promo-input">
+
+                        <input
+                            type="text"
+                            value="FEST2026"
+                        >
+
+                        <button>
+                            Apply
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <hr>
+
+
+                <!-- Total -->
+
+                <div class="total">
+
+                    <div>
+
+                        <small>
+                            TOTAL PAYABLE
+                        </small>
+
+                        <p>
+                            Incl. all taxes & fees
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        ₹6,298
+                    </strong>
+
+                </div>
+
+
+                <!-- Book button -->
+
+                <button class="confirm">
+
+                    Confirm Booking &
+                    <br>
+                    Proceed
+
+                    <span>→</span>
+
+                </button>
+
+
+                <!-- Warning -->
+
+                <div class="warning">
+
+                    ⚠️ <b>This is a ticket booking page.</b>
+                    <br>
+                    No real payment will be processed.
+
+                </div>
+
+
+                <p class="safe">
+                    GUARANTEED SAFE CHECKOUT
+                </p>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+</body>
+
+</html>
