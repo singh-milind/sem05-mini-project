@@ -11,15 +11,15 @@
 </head>
     <body>
         <header class="header">
-            <img src="resources/logo.png" alt="Event Hub Logo" class="logo">
-            <nav class="nav-bar">
+            <a href="index.html" aria-label="Event Hub home"><img src="resources/logo.png" alt="Event Hub Logo" class="logo"></a>
+            <nav class="nav-bar" aria-label="Primary navigation">
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="../event-page/index.html">Events</a></li>
+                    <li><a href="#about">About</a></li>
                 </ul>
             </nav>
-            <button id="profile-button" type="button" aria-label="Open profile">👤</button>
+            <a id="profile-button" href="index.html" aria-label="Return to home">👤</a>
         </header>
         <main class="main-content">
             <section class="hero-section" aria-labelledby="hero-title">
@@ -66,7 +66,7 @@
                 </div>
 
                 <div class="category-grid">
-                    <a class="category-card" href="#">
+                    <a class="category-card" href="../event-page/index.html">
                         <div class="category-card-top">
                             <h3>Music</h3>
                             <span>140+ Gigs</span>
@@ -75,7 +75,7 @@
                         <strong>Browse gigs</strong>
                     </a>
 
-                    <a class="category-card" href="#">
+                    <a class="category-card" href="../event-page/index.html">
                         <div class="category-card-top">
                             <h3>Comedy</h3>
                             <span>90+ Shows</span>
@@ -84,7 +84,7 @@
                         <strong>Browse shows</strong>
                     </a>
 
-                    <a class="category-card" href="#">
+                    <a class="category-card" href="../event-page/index.html">
                         <div class="category-card-top">
                             <h3>Culture Festivals</h3>
                             <span>110+ Fairs</span>
@@ -120,7 +120,7 @@
                                     <span class="event-price-label">Pass starts at</span>
                                     <strong>₹2,999 <small>onwards</small></strong>
                                 </div>
-                                <a href="#">View Details</a>
+                                <a href="../event-page/index.html">View Details</a>
                             </div>
                         </div>
                     </article>
@@ -141,7 +141,7 @@
                                     <span class="event-price-label">Tickets from</span>
                                     <strong>₹799 <small>onwards</small></strong>
                                 </div>
-                                <a href="#">View Details</a>
+                                <a href="../event-page/index.html">View Details</a>
                             </div>
                         </div>
                     </article>
@@ -162,7 +162,7 @@
                                     <span class="event-price-label">Pass starts at</span>
                                     <strong>₹499 <small>onwards</small></strong>
                                 </div>
-                                <a href="#">View Details</a>
+                                <a href="../event-page/index.html">View Details</a>
                             </div>
                         </div>
                     </article>
@@ -177,7 +177,7 @@
                 </div>
 
                 <div class="city-grid">
-                    <a class="city-card city-mumbai" href="#">
+                    <a class="city-card city-mumbai" href="../event-page/index.html">
                         <img src="resources/mumbai-city.jpg" alt="Live events and entertainment in Mumbai">
                         <div class="city-overlay"></div>
                         <div class="city-card-content">
@@ -186,7 +186,7 @@
                         </div>
                     </a>
 
-                    <a class="city-card city-goa" href="#">
+                    <a class="city-card city-goa" href="../event-page/index.html">
                         <img src="resources/goa-beach.jpg" alt="Live events and music festivals in Goa">
                         <div class="city-overlay"></div>
                         <div class="city-card-content">
@@ -195,7 +195,7 @@
                         </div>
                     </a>
 
-                    <a class="city-card city-jaipur" href="#">
+                    <a class="city-card city-jaipur" href="../event-page/index.html">
                         <img src="resources/jaipur-heritage.jpg" alt="Cultural events and festivals in Jaipur">
                         <div class="city-overlay"></div>
                         <div class="city-card-content">
@@ -207,7 +207,7 @@
             </section>
         </main>
 
-        <footer class="site-footer">
+        <footer class="site-footer" id="about">
             <div class="footer-intro">
                 <div class="footer-brand">
                     <img src="resources/logo.png" alt="Event Hub Logo">
@@ -217,14 +217,14 @@
             </div>
             <div class="footer-links">
                 <nav class="footer-nav" aria-label="Footer navigation">
-                    <a href="#">Home</a>
-                    <a href="#">Events</a>
-                    <a href="#">About</a>
+                    <a href="index.html">Home</a>
+                    <a href="../event-page/index.html">Events</a>
+                    <a href="#about">About</a>
                 </nav>
                 <nav class="footer-utility-links" aria-label="Support links">
-                    <a href="#">Help Center</a>
-                    <a href="#">Contact Us</a>
-                    <a href="#">Privacy</a>
+                    <a href="#about">Help Center</a>
+                    <a href="mailto:support@eventhub.example">Contact Us</a>
+                    <a href="#about">Privacy</a>
                 </nav>
             </div>
             <p class="footer-copyright">© 2026 Event Hub. All rights reserved.</p>

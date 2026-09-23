@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <title>Sunburn Goa 2026 | EventYatra</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="header">
-            <img src="resources/logo.png" alt="Event Hub Logo" class="logo">
-            <nav class="nav-bar">
+            <a href="../home-page/index.html" aria-label="Event Hub home"><img src="../home-page/resources/logo.png" alt="Event Hub Logo" class="logo"></a>
+            <nav class="nav-bar" aria-label="Primary navigation">
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="../home-page/index.html">Home</a></li>
+                    <li><a href="index.html" aria-current="page">Events</a></li>
+                    <li><a href="../home-page/index.html#about">About</a></li>
                 </ul>
             </nav>
-            <button id="profile-button" type="button" aria-label="Open profile">👤</button>
+            <a id="profile-button" href="../home-page/index.html" aria-label="Return to home">👤</a>
         </header>
 
 <main>
@@ -94,15 +97,15 @@
       <div class="ticket-card">
         <h2>Select Tickets</h2>
         <p class="muted">Choose your festival ticket.</p>
-        <div class="ticket"><div><b>General Admission</b><span>Festival entry</span></div><strong>₹2,999</strong><a href="#">Select Ticket</a></div>
-        <div class="ticket"><div><b>VIP Pass</b><span>Priority entry & VIP access</span></div><strong>₹5,999</strong><a href="#">Select Ticket</a></div>
-        <div class="ticket"><div><b>VIP Lounge & Backstage</b><span>Premium access</span></div><strong>₹9,999</strong><a href="#">Select Ticket</a></div>
+        <div class="ticket"><div><b>General Admission</b><span>Festival entry</span></div><strong>₹2,999</strong><a href="../booking-page/TicketBooking.html">Select Ticket</a></div>
+        <div class="ticket"><div><b>VIP Pass</b><span>Priority entry & VIP access</span></div><strong>₹5,999</strong><a href="../booking-page/TicketBooking.html">Select Ticket</a></div>
+        <div class="ticket"><div><b>VIP Lounge & Backstage</b><span>Premium access</span></div><strong>₹9,999</strong><a href="../booking-page/TicketBooking.html">Select Ticket</a></div>
       </div>
     </aside>
   </section>
 
   <section class="related wrap">
-    <div class="section-head"><h2>Related Events You Might Like</h2><a href="#">Browse All</a></div>
+    <div class="section-head"><h2>Related Events You Might Like</h2><a href="../home-page/index.html">Browse All</a></div>
     <div class="related-grid">
       <article><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl4NWuWt-6VTMy_dZbNM-a9TxADwsRvfRBMp15keTxlXUeOFAxmgODNGRuFcFb04X6KIqzjQVrPtysdIpSw_yPFd_nP3ykGBrlLlTwWFQOMKi3hxjc-McT0NXR4pG2AgS7IOntcW2ePiXWCa0923FTCKqJz0bIrpK_HcS2fSCFIP7FtEU5so9NMFQnGYIJ2Kk0uynVqyV4CWHwcBopIrero1etulPXojCiiBuOYhs7t4vdRDyskEkP" alt="Event"><h3>NH7 Weekender 2026</h3><p>₹2,499 onwards</p></article>
       <article><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4weevEKirEfvXQtoJkITu8ojFei9SMOv2aYnZVOWrCzSf8UKVsgVf0X75Iq6YDwB9d8oExrlH59aJq0r98_Wv1QihuPkXVZBvijdGSCoRKLgxPf5d2MSec0kGtno_16i9zH0PwdHrJpSM7jSCyW9JKoeEU2slms60CbstVmVpLa4xH8ZgPoIGHn8I4yjgCdT9jJZGicKmBxdylRsSbIij0aFkgd9GaDE2RImhYV_CHV-tfnDjrShC" alt="Event"><h3>India Art Fair</h3><p>₹500 onwards</p></article>
@@ -111,14 +114,10 @@
   </section>
 </main>
 
-<footer class="footer">
-  <div class="wrap footer-grid">
-    <div><b>EventYatra</b><p>Discover concerts, festivals and experiences across India.</p></div>
-    <div><b>Quick Links</b><p>Home<br>Events<br>Categories<br>Booking</p></div>
-    <div><b>Support</b><p>Help Center<br>Contact Us<br>Privacy</p></div>
-    <div><b>Legal</b><p>Terms<br>Cancellation<br>Refund Policy</p></div>
-  </div>
-  <p class="copyright">© 2026 EventYatra. All rights reserved.</p>
+<footer class="site-footer" id="about">
+  <div class="footer-intro"><div class="footer-brand"><img src="../home-page/resources/logo.png" alt="Event Hub Logo"><span>Event Hub</span></div><p>Discover concerts, comedy shows, and cultural festivals happening across India.</p></div>
+  <div class="footer-links"><nav class="footer-nav" aria-label="Footer navigation"><a href="../home-page/index.html">Home</a><a href="index.html">Events</a><a href="../home-page/index.html#about">About</a></nav><nav class="footer-utility-links" aria-label="Support links"><a href="../home-page/index.html#about">Help Center</a><a href="mailto:support@eventhub.example">Contact Us</a><a href="../home-page/index.html#about">Privacy</a></nav></div>
+  <p class="footer-copyright">© 2026 Event Hub. All rights reserved.</p>
 </footer>
 
 </body>
