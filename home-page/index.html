@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Event Hub - Home Page</title>
+</head>
+    <body>
+        <header class="header">
+            <img src="resources/logo.png" alt="Event Hub Logo" class="logo">
+            <nav class="nav-bar">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <button id="profile-button" type="button" aria-label="Open profile">👤</button>
+        </header>
+        <main class="main-content">
+            <section class="hero-section" aria-labelledby="hero-title">
+                <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+                <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+
+                <div class="hero-content">
+                    <div class="hero-eyebrow">
+                        India's Premier Ticketing Gateway
+                    </div>
+
+                    <h1 id="hero-title">India's Events.<br>
+                        <span>Your Next Experience.</span>
+                    </h1>
+
+                    <p id="hero-description">
+                        From live concerts and college fests to tech conferences,
+                        sports and cultural celebrations — discover what's happening
+                        across India.
+                    </p>
+                </div>
+
+                <div class="image-container">
+                    <div class="hero-image-frame">
+                        <img class="hero-image" src="resources/hero-section-concert.jpg" alt="Crowd enjoying a live concert">
+                        <div class="image-gradient" aria-hidden="true"></div>
+                        <div class="event-stat-card">
+                            <div class="event-stat-copy">
+                                <strong>1,850+ Verified Events</strong>
+                                <span>Live booking across 15+ cities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="categories-section" aria-labelledby="categories-title">
+                <div class="categories-heading">
+                    <div>
+                        <p class="section-eyebrow">Curated Genres</p>
+                        <h2 id="categories-title">Explore by Category</h2>
+                        <p class="section-description">Handpicked experiences curated across India</p>
+                    </div>
+                </div>
+
+                <div class="category-grid">
+                    <a class="category-card" href="#">
+                        <div class="category-card-top">
+                            <h3>Music</h3>
+                            <span>140+ Gigs</span>
+                        </div>
+                        <p>Live concerts, festivals and music shows from India's most exciting artists.</p>
+                        <strong>Browse gigs</strong>
+                    </a>
+
+                    <a class="category-card" href="#">
+                        <div class="category-card-top">
+                            <h3>Comedy</h3>
+                            <span>90+ Shows</span>
+                        </div>
+                        <p>Stand-up comedy and entertainment shows from top Indian comedians.</p>
+                        <strong>Browse shows</strong>
+                    </a>
+
+                    <a class="category-card" href="#">
+                        <div class="category-card-top">
+                            <h3>Culture Festivals</h3>
+                            <span>110+ Fairs</span>
+                        </div>
+                        <p>Indian cultural celebrations, exhibitions and festivals across the country.</p>
+                        <strong>Explore culture</strong>
+                    </a>
+                </div>
+            </section>
+
+            <section class="featured-section" aria-labelledby="featured-title">
+                <div class="featured-heading">
+                    <div>
+                        <p class="section-eyebrow">Trending Now</p>
+                        <h2 id="featured-title">Featured Events Across India</h2>
+                    </div>
+                </div>
+
+                <div class="featured-grid">
+                    <article class="event-card">
+                        <div class="event-image music-event-image">
+                            <img src="resources/hero-section-concert.jpg" alt="Live music festival crowd">
+                            <span class="event-category">Music</span>
+                        </div>
+                        <div class="event-card-content">
+                            <div>
+                                <h3>Sunburn Goa 2026</h3>
+                                <p class="event-meta">18 Dec 2026 · 4:00 PM</p>
+                                <p class="event-location">Vagator Beach, North Goa</p>
+                            </div>
+                            <div class="event-card-footer">
+                                <div>
+                                    <span class="event-price-label">Pass starts at</span>
+                                    <strong>₹2,999 <small>onwards</small></strong>
+                                </div>
+                                <a href="#">View Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <div class="event-image comedy-event-image">
+                            <img src="resources/comedy-show.jpg" alt="Audience enjoying a comedy show">
+                            <span class="event-category">Comedy</span>
+                        </div>
+                        <div class="event-card-content">
+                            <div>
+                                <h3>Canvas Laugh Club</h3>
+                                <p class="event-meta">22 Nov 2026 · 7:30 PM</p>
+                                <p class="event-location">The Habitat, Mumbai</p>
+                            </div>
+                            <div class="event-card-footer">
+                                <div>
+                                    <span class="event-price-label">Tickets from</span>
+                                    <strong>₹799 <small>onwards</small></strong>
+                                </div>
+                                <a href="#">View Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <div class="event-image culture-event-image">
+                            <img src="resources/culture-festival.jpg" alt="Cultural festival celebration">
+                            <span class="event-category">Culture Festivals</span>
+                        </div>
+                        <div class="event-card-content">
+                            <div>
+                                <h3>Rangilo Rajasthan</h3>
+                                <p class="event-meta">22-26 Jan 2027 · 10:00 AM</p>
+                                <p class="event-location">Jawahar Circle, Jaipur</p>
+                            </div>
+                            <div class="event-card-footer">
+                                <div>
+                                    <span class="event-price-label">Pass starts at</span>
+                                    <strong>₹499 <small>onwards</small></strong>
+                                </div>
+                                <a href="#">View Details</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="cities-section" aria-labelledby="cities-title">
+                <div class="cities-heading">
+                    <p class="section-eyebrow">Regional Hotspots</p>
+                    <h2 id="cities-title">Trending Event Hubs in India</h2>
+                    <p class="section-description">Discover live entertainment and cultural experiences across popular destinations</p>
+                </div>
+
+                <div class="city-grid">
+                    <a class="city-card city-mumbai" href="#">
+                        <img src="resources/mumbai-city.jpg" alt="Live events and entertainment in Mumbai">
+                        <div class="city-overlay"></div>
+                        <div class="city-card-content">
+                            <h3>Mumbai</h3>
+                            <p>Marine Drive concerts, arena gigs and Bollywood showcases</p>
+                        </div>
+                    </a>
+
+                    <a class="city-card city-goa" href="#">
+                        <img src="resources/goa-beach.jpg" alt="Live events and music festivals in Goa">
+                        <div class="city-overlay"></div>
+                        <div class="city-card-content">
+                            <h3>Goa</h3>
+                            <p>Beach festivals, sunset concerts and coastal experiences</p>
+                        </div>
+                    </a>
+
+                    <a class="city-card city-jaipur" href="#">
+                        <img src="resources/jaipur-heritage.jpg" alt="Cultural events and festivals in Jaipur">
+                        <div class="city-overlay"></div>
+                        <div class="city-card-content">
+                            <h3>Jaipur</h3>
+                            <p>Heritage celebrations, folk festivals and cultural showcases</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-intro">
+                <div class="footer-brand">
+                    <img src="resources/logo.png" alt="Event Hub Logo">
+                    <span>Event Hub</span>
+                </div>
+                <p>Discover concerts, comedy shows, and cultural festivals happening across India.</p>
+            </div>
+            <div class="footer-links">
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <a href="#">Home</a>
+                    <a href="#">Events</a>
+                    <a href="#">About</a>
+                </nav>
+                <nav class="footer-utility-links" aria-label="Support links">
+                    <a href="#">Help Center</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Privacy</a>
+                </nav>
+            </div>
+            <p class="footer-copyright">© 2026 Event Hub. All rights reserved.</p>
+        </footer>
+
+    </body>
+</html>
